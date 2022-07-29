@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: custom action a
-        if: ${{ env.TEST1 + env.TEST2 == 'saadkhalid'}}
+        if: ${{ env.TEST1 == 'saad'}}
         uses: ./action-a
         with:
           MY_NAME: "stargazer $TEST1 $TEST2"
