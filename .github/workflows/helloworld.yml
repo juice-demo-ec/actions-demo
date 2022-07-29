@@ -1,9 +1,13 @@
 name: A workflow for my Hello World file
 on: push
 
+env:
+  TEST1: saad
+  TEST2: khalid
+
 jobs:
   build:
-    name: Hello world action
+    name: Hello world action ${{TEST1}} ${{TEST2}} 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
