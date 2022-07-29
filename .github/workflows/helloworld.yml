@@ -7,7 +7,7 @@ env:
 
 jobs:
   build:
-    name: Hello world action 
+    name: ${{env.TEST1}} 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
