@@ -9,7 +9,7 @@ jobs:
   build:
     env: 
       TEST3: eh
-    name: ${{env.TEST3}} 
+    name: " will this work ${{env.TEST3}} "
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
