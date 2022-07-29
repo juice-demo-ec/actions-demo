@@ -7,10 +7,11 @@ env:
 
 jobs:
   build:
-    name: Hello world action ${{env.TEST1}} ${{env.TEST2}} 
+    name: Hello world action 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: ./action-a
+      - name: custom action a
+        uses: ./action-a
         with:
           MY_NAME: "stargazer $TEST1 $TEST2"
